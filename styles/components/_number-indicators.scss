@@ -1,0 +1,32 @@
+.number-indicators {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  border: 1px solid orange;
+  width: fit-content;
+  align-items: center;
+}
+
+.number-indicators>* {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding: 0 1.5rem;
+  max-width: fit-content;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid hsl(var(--clr-light) / .2);
+  color: hsl(var(--clr-light))
+}
+
+.number-indicators>[aria-selected="true"],
+.number-indicators>.active {
+  background-color: hsl(var(--clr-light));
+  color: hsl(var(--clr-dark))
+}
+
+.number-indicators>:hover,
+.number-indicators>:focus {
+  border-color: hsl(var(--clr-light));
+}
