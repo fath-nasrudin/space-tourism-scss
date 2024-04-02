@@ -203,6 +203,174 @@
   --flow-space: 3rem;
 }
 
+.p-xs {
+  padding: 0.5rem;
+}
+
+.px-xs {
+  padding-inline: 0.5rem;
+}
+
+.py-xs {
+  padding-block: 0.5rem;
+}
+
+.m-xs {
+  margin: 0.5rem;
+}
+
+.mx-xs {
+  margin-inline: 0.5rem;
+}
+
+.my-xs {
+  margin-block: 0.5rem;
+}
+
+.p-sm {
+  padding: 1rem;
+}
+
+.px-sm {
+  padding-inline: 1rem;
+}
+
+.py-sm {
+  padding-block: 1rem;
+}
+
+.m-sm {
+  margin: 1rem;
+}
+
+.mx-sm {
+  margin-inline: 1rem;
+}
+
+.my-sm {
+  margin-block: 1rem;
+}
+
+.p-md {
+  padding: 1.5rem;
+}
+
+.px-md {
+  padding-inline: 1.5rem;
+}
+
+.py-md {
+  padding-block: 1.5rem;
+}
+
+.m-md {
+  margin: 1.5rem;
+}
+
+.mx-md {
+  margin-inline: 1.5rem;
+}
+
+.my-md {
+  margin-block: 1.5rem;
+}
+
+.p-lg {
+  padding: 2rem;
+}
+
+.px-lg {
+  padding-inline: 2rem;
+}
+
+.py-lg {
+  padding-block: 2rem;
+}
+
+.m-lg {
+  margin: 2rem;
+}
+
+.mx-lg {
+  margin-inline: 2rem;
+}
+
+.my-lg {
+  margin-block: 2rem;
+}
+
+.p-xl {
+  padding: 3rem;
+}
+
+.px-xl {
+  padding-inline: 3rem;
+}
+
+.py-xl {
+  padding-block: 3rem;
+}
+
+.m-xl {
+  margin: 3rem;
+}
+
+.mx-xl {
+  margin-inline: 3rem;
+}
+
+.my-xl {
+  margin-block: 3rem;
+}
+
+.p-xxl {
+  padding: 4rem;
+}
+
+.px-xxl {
+  padding-inline: 4rem;
+}
+
+.py-xxl {
+  padding-block: 4rem;
+}
+
+.m-xxl {
+  margin: 4rem;
+}
+
+.mx-xxl {
+  margin-inline: 4rem;
+}
+
+.my-xxl {
+  margin-block: 4rem;
+}
+
+.p-xxxl {
+  padding: 5rem;
+}
+
+.px-xxxl {
+  padding-inline: 5rem;
+}
+
+.py-xxxl {
+  padding-block: 5rem;
+}
+
+.m-xxxl {
+  margin: 5rem;
+}
+
+.mx-xxxl {
+  margin-inline: 5rem;
+}
+
+.my-xxxl {
+  margin-block: 5rem;
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -357,7 +525,6 @@ body {
 }
 
 .primary-navigation {
-  padding: 1.5rem;
   --gap: clamp(3rem, 5vw, 5rem);
   justify-content: center;
   background-color: hsl(var(--clr-light)/0.1);
@@ -368,4 +535,26 @@ body {
 
 .primary-navigation a {
   text-decoration: none;
+}
+
+.underline-indicators > * {
+  border-bottom: 3px solid transparent;
+  padding-block: var(--underline-space, 1rem);
+}
+
+.underline-indicators > .active {
+  border-color: hsl(var(--clr-light));
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-color: hsl(var(--clr-accent));
+}
+
+.underline-indicators--space-md {
+  --underline-space: 1.5rem;
+}
+
+.underline-indicators--space-lg {
+  --underline-space: 2rem;
 }/*# sourceMappingURL=main.css.map */
