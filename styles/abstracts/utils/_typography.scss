@@ -24,3 +24,34 @@ $letter-spacing: md, lg, xl;
     letter-spacing: var(--letter-spacing-#{$name})
   }
 }
+
+// heading and subheading
+$heading: h1 900, h2 800, h3 700, h4 600;
+
+@each $name, $value in $heading {
+  .text-#{$name} {
+    text-transform: uppercase;
+    font-family: var(--ff-serif);
+    font-size: var(--fs-#{$value});
+  }
+}
+
+.text-h5 {
+  text-transform: uppercase;
+  color: hsl(var(--clr-light) /.5);
+  font-size: var(--fs-500);
+  font-family: var(--ff-sans-cond);
+  letter-spacing: var(--letter-spacing-lg);
+}
+
+.text-subh1 {
+  text-transform: uppercase;
+  font-family: var(--ff-serif);
+  font-size: (--fs-500);
+}
+
+.text-subh2 {
+  text-transform: uppercase;
+  font-family: var(--ff-sans-cond);
+  font-size: (--fs-300);
+}
