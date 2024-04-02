@@ -1,0 +1,15 @@
+.dot-indicators>* {
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-light) /.2);
+  border: none;
+}
+
+.dot-indicators>[aria-selected="true"] {
+  background-color: hsl(var(--clr-light));
+}
+
+.dot-indicators>:hover {
+  background-color: hsl(var(--clr-accent));
+}

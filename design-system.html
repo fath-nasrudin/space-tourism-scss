@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/png">
   </head>
 
-  <body>
+  <body class="mb-24">
     <main class="container container--center flow flow--space-xl">
 
       <!-- colors -->
@@ -141,13 +141,20 @@
         </div>
 
         <!-- tablists -->
-        <div>
+        <div class="flow">
           <!-- tablist -->
           <div class="tab-list underline-indicators flex">
             <button aria-selected="true">Moon</button>
             <button aria-selected="false">Mars</button>
             <button aria-selected="false">Europa</button>
 
+          </div>
+
+          <!-- dot indicators -->
+          <div class="dot-indicators flex">
+            <button aria-selected="true"><span class="sr-only">Slide 1</span></button>
+            <button aria-selected="false"><span class="sr-only">Slide 2</span></button>
+            <button aria-selected="false"><span class="sr-only">Slide 4</span></button>
           </div>
         </div>
       </div>
