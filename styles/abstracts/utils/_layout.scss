@@ -1,0 +1,17 @@
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 1rem;
+}
+
+.container--center {
+  margin-inline: auto;
+}

@@ -1,0 +1,30 @@
+$sizes: 200, 300, 400, 500, 600, 700, 800, 900;
+
+// font-size
+@each $fs in $sizes {
+  .fs-#{$fs} {
+    font-size: var(--fs-#{$fs});
+  }
+}
+
+// font-family
+$font-family: 'sans', 'sans-cond', 'serif';
+
+@each $ff in $font-family {
+  .ff-#{$ff} {
+    font-family: var(--ff-#{$ff});
+  }
+}
+
+// letter spacing
+$letter-spacing: (
+  md: 0.235,
+  lg: 0.27,
+  xl: 0.475
+);
+
+@each $name, $value in $letter-spacing {
+  .letter-spacing-#{$name} {
+    letter-spacing: #{$value}ch;
+  }
+}

@@ -1,0 +1,14 @@
+.flow>*+* {
+  margin-top: var(--flow-space, 1rem);
+}
+
+$flow-spaces: sm 0.5rem,
+  nm 1rem,
+  lg 2rem,
+  xl 3rem;
+
+@each $name, $value in $flow-spaces {
+  .flow--space-#{$name} {
+    --flow-space: #{$value};
+  }
+}
