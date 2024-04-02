@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+:root {
+  --clr-light: 0 0% 100%;
+  --clr-accent: 231 77% 90%;
+  --clr-dark: 230 35% 7%;
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1rem;
+  --fs-300: 0.875rem;
+  --fs-200: 0.75rem;
+  --ff-serif: "Bellefair", serif;
+  --ff-sans: "Barlow", sans-serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+
+.text-accent {
+  color: hsl(var(--clr-accent));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-accent));
+}
+
+.text-light {
+  color: hsl(var(--clr-light));
+}
+
+.bg-light {
+  background-color: hsl(var(--clr-light));
+}
+
+.opac-100 {
+  opacity: 0.1;
+}
+
+.opac-200 {
+  opacity: 0.2;
+}
+
+.opac-300 {
+  opacity: 0.3;
+}
+
+.opac-400 {
+  opacity: 0.4;
+}
+
+.opac-500 {
+  opacity: 0.5;
+}
+
+.opac-600 {
+  opacity: 0.6;
+}
+
+.opac-700 {
+  opacity: 0.7;
+}
+
+.opac-800 {
+  opacity: 0.8;
+}
+
+.opac-900 {
+  opacity: 0.9;
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+.ff-sans {
+  font-family: var(--ff-sans);
+}
+
+.ff-sans-cond {
+  font-family: var(--ff-sans-cond);
+}
+
+.ff-serif {
+  font-family: var(--ff-serif);
+}
+
+.letter-spacing-md {
+  letter-spacing: 0.235ch;
+}
+
+.letter-spacing-lg {
+  letter-spacing: 0.27ch;
+}
+
+.letter-spacing-xl {
+  letter-spacing: 0.475ch;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flow--space-sm {
+  --flow-space: 0.5rem;
+}
+
+.flow--space-nm {
+  --flow-space: 1rem;
+}
+
+.flow--space-lg {
+  --flow-space: 2rem;
+}
+
+.flow--space-xl {
+  --flow-space: 3rem;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 1rem;
+}
+
+.container--center {
+  margin-inline: auto;
+}
+
+/*--------------------*/
+/* RESET START        */
+/*--------------------*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* reset the font-weight tobe normal*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*--------------------*/
+/* RESET END        */
+/*--------------------*/
+* {
+  font-weight: 400;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-light));
+  font-family: var(--ff-sans);
+  line-height: 1.5;
+}/*# sourceMappingURL=main.css.map */
