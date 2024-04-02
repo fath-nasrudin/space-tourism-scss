@@ -1,0 +1,11 @@
+* {
+  font-weight: 400;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-light));
+  font-family: var(--ff-sans);
+  line-height: 1.5;
+}
