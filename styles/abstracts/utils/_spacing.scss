@@ -13,34 +13,24 @@ $flow-spaces: sm 0.5rem,
   }
 }
 
-// padding
-$sizing: xs 0.5rem, sm 1rem, md 1.5rem, lg 2rem, xl 3rem, xxl 4rem, xxxl 5rem;
+// padding and margins
+$space-sizes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24;
+$directions: 'x' 'inline', 'y' 'block', 't' 'top', 'b' 'bottom', 'l' 'left', 'r' 'right';
+$types: 'p' 'padding', 'm' 'margin';
+$multiplier: 0.25rem;
 
-@each $name, $value in $sizing {
-
-  // padding
-  .p-#{$name} {
-    padding: #{$value};
+@each $tname, $tvalue in $types {
+  @each $size in $space-sizes {
+    .#{$tname}-#{$size} {
+      #{$tvalue}: $size * $multiplier;
+    }
   }
 
-  .px-#{$name} {
-    padding-inline: #{$value};
-  }
-
-  .py-#{$name} {
-    padding-block: #{$value};
-  }
-
-  // margin
-  .m-#{$name} {
-    margin: #{$value};
-  }
-
-  .mx-#{$name} {
-    margin-inline: #{$value};
-  }
-
-  .my-#{$name} {
-    margin-block: #{$value};
+  @each $dirname, $dirvalue in $directions {
+    @each $size in $space-sizes {
+      .#{$tname}#{$dirname}-#{$size} {
+        #{$tvalue}-#{$dirvalue}: $size * $multiplier;
+      }
+    }
   }
 }
