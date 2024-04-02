@@ -17,14 +17,10 @@ $font-family: 'sans', 'sans-cond', 'serif';
 }
 
 // letter spacing
-$letter-spacing: (
-  md: 0.235,
-  lg: 0.27,
-  xl: 0.475
-);
+$letter-spacing: md, lg, xl;
 
-@each $name, $value in $letter-spacing {
+@each $name in $letter-spacing {
   .letter-spacing-#{$name} {
-    letter-spacing: #{$value}ch;
+    letter-spacing: var(--letter-spacing-#{$name})
   }
 }
