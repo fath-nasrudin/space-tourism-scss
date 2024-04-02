@@ -3,7 +3,8 @@
   padding-block: var(--underline-space, 1rem);
 }
 
-.underline-indicators>.active {
+.underline-indicators>.active,
+.underline-indicators>[aria-selected="true"] {
   border-color: hsl(var(--clr-light));
 }
 
