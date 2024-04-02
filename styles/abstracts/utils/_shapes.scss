@@ -1,0 +1,43 @@
+.circle {
+  position: relative;
+  display: grid;
+  place-content: center;
+  max-width: fit-content;
+  padding: var(--circle-space, 1rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.circle,
+.circle a {
+  text-decoration: none;
+}
+
+.circle--hover {
+  z-index: 1;
+}
+
+.circle--hover::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: hsl(var(--clr-light) /.25);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 200ms linear, transform 200ms ease-in-out;
+}
+
+.circle--hover:hover::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.circle--md {
+  --circle-space: 2rem;
+}
+
+.circle--lg {
+  --circle-space: 3rem;
+}
