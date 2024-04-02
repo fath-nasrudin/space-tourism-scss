@@ -12,3 +12,35 @@ $flow-spaces: sm 0.5rem,
     --flow-space: #{$value};
   }
 }
+
+// padding
+$sizing: xs 0.5rem, sm 1rem, md 1.5rem, lg 2rem, xl 3rem, xxl 4rem, xxxl 5rem;
+
+@each $name, $value in $sizing {
+
+  // padding
+  .p-#{$name} {
+    padding: #{$value};
+  }
+
+  .px-#{$name} {
+    padding-inline: #{$value};
+  }
+
+  .py-#{$name} {
+    padding-block: #{$value};
+  }
+
+  // margin
+  .m-#{$name} {
+    margin: #{$value};
+  }
+
+  .mx-#{$name} {
+    margin-inline: #{$value};
+  }
+
+  .my-#{$name} {
+    margin-block: #{$value};
+  }
+}
