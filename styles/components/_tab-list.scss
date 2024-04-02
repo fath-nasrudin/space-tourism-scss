@@ -1,0 +1,10 @@
+.tab-list>* {
+  color: hsl(var(--clr-accent));
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.tab-list>[aria-selected="true"] {
+  color: hsl(var(--clr-light));
+}
