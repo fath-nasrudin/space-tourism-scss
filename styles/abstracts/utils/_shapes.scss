@@ -15,6 +15,7 @@
 
 .circle--hover {
   z-index: 1;
+  margin: clamp(2rem, 5vw, 4rem);
 }
 
 .circle--hover::after {
