@@ -8,6 +8,25 @@
   gap: var(--gap, 1rem);
 }
 
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  place-content: center;
+}
+
+@media (min-width: 35em) {
+  .grid-12 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 45em) {
+  .grid-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
 .container {
   max-width: 80rem;
   padding: 1rem;
