@@ -1,0 +1,66 @@
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-header .logo {
+  margin-left: clamp(1rem, 4vw, 2rem);
+  margin-top: 1.5rem;
+  width: clamp(2rem, 5vw, 3rem);
+  aspect-ratio: 1;
+}
+
+.toggle-nav-mobile {
+  position: absolute;
+  z-index: 2000;
+  top: 2rem;
+  right: 1rem;
+  width: 32px;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: none;
+  background-image: url('../../assets/shared/icon-hamburger.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle-nav-mobile[aria-expanded="true"] {
+  background-image: url('../../assets/shared/icon-close.svg');
+}
+
+.primary-header .line {
+  display: none;
+}
+
+@media (min-width: 35em) {
+  .primary-header .logo {
+    margin-top: unset;
+  }
+
+  .toggle-nav-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 45em) {
+  .primary-header {
+    margin-top: 1.5rem;
+  }
+
+  // handling line between logo and navigation
+  .primary-header {
+    --gap: 0;
+  }
+
+  .primary-header .line {
+    position: relative;
+    z-index: 2000;
+    flex: 1;
+    display: block;
+    width: 100%;
+    height: 1px;
+    transform: translateX(2rem);
+    background-color: hsl(var(--clr-light) /0.3);
+  }
+}
