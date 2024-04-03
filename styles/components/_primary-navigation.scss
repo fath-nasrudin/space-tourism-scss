@@ -3,7 +3,7 @@
   --gap: clamp(2rem, 5vw, 5rem);
   padding-inline: clamp(3rem, 8vw, 8rem);
   background-color: hsl(var(--clr-light) /.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2rem);
 
   list-style: none;
 }
