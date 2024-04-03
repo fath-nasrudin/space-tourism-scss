@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  text-align: center;
+}
+
+body>:nth-child(2) {
+  flex-grow: 1;
+}
+
+@media (min-width: 45em) {
+  main {
+    text-align: left;
+  }
+}
+
+.content p:not([class]) {
+  max-width: 30rem;
+}

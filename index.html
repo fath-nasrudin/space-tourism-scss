@@ -10,7 +10,7 @@
     <script src="./scripts/main.js" defer></script>
   </head>
 
-  <body>
+  <body class="home">
     <header class="primary-header flex">
       <div class="logo">
         <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
@@ -23,21 +23,38 @@
       <nav>
         <ul id="primary-navigation" class="js-primary-navigation primary-navigation underline-indicators flex"
           data-visible="false">
-          <li class="active"><a href="#" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+          <li class="active"><a href="./index.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
                 class="text-light" aria-hidden="true">00</span> Home</a>
           </li>
-          <li><a href="#" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span class="text-light"
-                aria-hidden="true">01</span>
+          <li><a href="./destination.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">01</span>
               Destination</a></li>
-          <li><a href="#" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span class="text-light"
-                aria-hidden="true">02</span>
+          <li><a href="./crew.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">02</span>
               Crew</a></li>
-          <li><a href="#" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span class="text-light"
-                aria-hidden="true">02</span>
+          <li><a href="./technology.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">02</span>
               Technology</a></li>
         </ul>
       </nav>
     </header>
+    <main class="container grid-12 grid-12--home">
+      <div id="text-content" class="content">
+        <h1 class="text-h5">
+          So, you want to travel to
+          <div class="text-h1 text-light">Space</div>
+        </h1>
+        <p>
+          Let’s face it; if you want to go to space, you might as well genuinely go to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+
+      <a id="cta" href="./destination.html"
+        class="circle circle--hover bg-light text-dark circle--lg uppercase fs-500 ff-serif">Explore</a>
+
+    </main>
 
   </body>
 
