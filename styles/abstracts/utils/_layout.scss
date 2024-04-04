@@ -10,9 +10,15 @@
 
 .grid-12 {
   display: grid;
+
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  place-content: center;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  place-items: center;
+}
+
+.grid-12>* {
+  grid-column: 1 / -1;
 }
 
 @media (min-width: 35em) {
