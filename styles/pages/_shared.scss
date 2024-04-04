@@ -3,20 +3,23 @@ body {
   flex-direction: column;
 }
 
-main {
-  text-align: center;
-}
-
 body>:nth-child(2) {
   flex-grow: 1;
+}
+
+main {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
 }
 
 @media (min-width: 45em) {
   main {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
 .content p:not([class]) {
-  max-width: 30rem;
+  max-width: 28.7rem;
 }
