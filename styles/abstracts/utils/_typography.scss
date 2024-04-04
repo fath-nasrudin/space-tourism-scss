@@ -47,11 +47,11 @@ $heading: h1 900, h2 800, h3 700, h4 600;
 .text-subh1 {
   text-transform: uppercase;
   font-family: var(--ff-serif);
-  font-size: (--fs-500);
+  font-size: var(--fs-500);
 }
 
 .text-subh2 {
   text-transform: uppercase;
   font-family: var(--ff-sans-cond);
-  font-size: (--fs-300);
+  font-size: var(--fs-300);
 }
