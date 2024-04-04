@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew | Space Tourism</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/png">
+    <script src="./scripts/main.js" defer></script>
+  </head>
+
+  <body class="crew">
+    <header class="primary-header flex">
+      <div class="logo">
+        <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
+      </div>
+
+      <div class="line"></div>
+
+      <button class="js-toggle-nav-mobile toggle-nav-mobile" aria-expanded="false"><span
+          class="sr-only">Menu</span></button>
+
+      <nav>
+        <ul id="primary-navigation" class="js-primary-navigation primary-navigation underline-indicators flex"
+          data-visible="false">
+          <li><a href="./index.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">00</span> Home</a>
+          </li>
+          <li><a href="./destination.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">01</span>
+              Destination</a></li>
+          <li class="active"><a href="./crew.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">02</span>
+              Crew</a></li>
+          <li><a href="./technology.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">03</span>
+              Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container grid-12 grid-12--crew">
+      <h1 class="uppercase fs-500 ff-sans-cond letter-spacing-md">
+        <span class="opac-400 mr-2" aria-hidden="true">02</span>
+        Meet your crew
+      </h1>
+
+      <picture data-tab-image-item="true" id="commander-image">
+        <source srcset="./assets/crew/image-douglas-hurley.webp" type="media/webp">
+        <img src="./assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+      </picture>
+
+      <picture hidden data-tab-image-item="true" id="specialist-image">
+        <source srcset="./assets/crew/image-mark-shuttleworth.webp" type="media/webp">
+        <img src="./assets/crew/image-mark-shuttleworth.png" alt="Mark Shuttleworth">
+      </picture>
+
+      <picture hidden data-tab-image-item="true" id="pilot-image">
+        <source srcset="./assets/crew/image-victor-glover.webp" type="media/webp">
+        <img src="./assets/crew/image-victor-glover.png" alt="Victor Glover">
+      </picture>
+
+      <picture hidden data-tab-image-item="true" id="engineer-image">
+        <source srcset="./assets/crew/image-anousheh-ansari.webp" type="media/webp">
+        <img src="./assets/crew/image-anousheh-ansari.png" alt="Anousheh Ansari">
+      </picture>
+
+      <div class="dot-indicators flex" role="tablist">
+        <button aria-selected="true" aria-controls="commander-panel" role="tab" data-tab-image="commander-image">
+          <span class="sr-only">Commander</span>
+        </button>
+        <button aria-selected="false" aria-controls="specialist-panel" role="tab"
+          data-tab-image="specialist-image"><span class="sr-only">Mission
+            Specialist</span></button>
+        <button aria-selected="false" aria-controls="pilot-panel" role="tab" data-tab-image="pilot-image"><span
+            class="sr-only">Pilot</span></button>
+        <button aria-selected="false" aria-controls="engineer-panel" role="tab" data-tab-image="engineer-image"><span
+            class="sr-only">Flight
+            Engineer</span></button>
+      </div>
+
+      <!-- commander panel -->
+      <div id="commander-panel" class="content flow" role="tabpanel">
+        <header class="ff-serif">
+          <h2 class="uppercase fs-500 text-accent">Commander</h2>
+          <p class="uppercase fs-700">Douglas Hurley</p>
+        </header>
+        <p>
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.
+        </p>
+      </div>
+
+      <!-- specialist panel -->
+      <div hidden id="specialist-panel" class="content flow" role="tabpanel">
+        <header class="ff-serif">
+          <h2 class="uppercase fs-500 text-accent">Specialist</h2>
+          <p class="uppercase fs-700">Mark Shuttleworth</p>
+        </header>
+        <p>
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu
+          operating
+          system. Shuttleworth became the first South African to travel to space as a space tourist.
+        </p>
+      </div>
+
+      <!-- pilot panel -->
+      <div hidden id="pilot-panel" class="content flow" role="tabpanel">
+        <header class="ff-serif">
+          <h2 class="uppercase fs-500 text-accent">Pilot</h2>
+          <p class="uppercase fs-700">Victor Glover</p>
+        </header>
+        <p>
+          Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is
+          a
+          commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+          station
+          systems flight engineer.
+        </p>
+      </div>
+
+      <!-- engineer panel -->
+      <div hidden id="engineer-panel" class="content flow" role="tabpanel">
+        <header class="ff-serif">
+          <h2 class="uppercase fs-500 text-accent">Engineer</h2>
+          <p class="uppercase fs-700">Anousheh Ansari</p>
+        </header>
+        <p>
+          Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth
+          self-funded
+          space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+        </p>
+      </div>
+    </main>
+  </body>
+
+</html>
