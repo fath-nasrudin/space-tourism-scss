@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | Space Tourism</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/png">
+    <script src="./scripts/main.js" defer></script>
+  </head>
+
+  <body class="technology">
+    <header class="primary-header flex">
+      <div class="logo">
+        <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
+      </div>
+
+      <div class="line"></div>
+
+      <button class="js-toggle-nav-mobile toggle-nav-mobile" aria-expanded="false"><span
+          class="sr-only">Menu</span></button>
+      <nav>
+        <ul id="primary-navigation" class="js-primary-navigation primary-navigation underline-indicators flex"
+          data-visible="false">
+          <li><a href="./index.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">00</span> Home</a>
+          </li>
+          <li><a href="./destination.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">01</span>
+              Destination</a></li>
+          <li><a href="./crew.html" class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span
+                class="text-light" aria-hidden="true">02</span>
+              Crew</a></li>
+          <li class="active"><a href="./technology.html"
+              class="uppercase text-accent ff-sans-cond letter-spacing-lg"><span class="text-light"
+                aria-hidden="true">03</span>
+              Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container grid-12 grid-12--technology">
+
+      <h1 class="uppercase fs-500 ff-sans-cond letter-spacing-md"><span class="opac-400 mr-2"
+          aria-hidden="true">03</span>
+        Space launch 101
+      </h1>
+
+      <!-- vehicle image -->
+      <picture id="vehicle-image" data-tab-image-item="true">
+        <source media="(min-width: 45em)" srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
+          type="image/jpg">
+        <source srcset="./assets/technology/image-launch-vehicle-landscape.jpg" type="image/jpg">
+        <img src="./assets/technology/image-launch-vehicle-landscape.jpg" type="image/jpg" alt="launch vehicle">
+      </picture>
+
+      <!-- capsule image -->
+      <picture hidden id="capsule-image" data-tab-image-item="true">
+        <source media="(min-width: 45em)" srcset="./assets/technology/image-space-capsule-portrait.jpg"
+          type="image/jpg">
+        <source srcset="./assets/technology/image-space-capsule-landscape.jpg" type="image/jpg">
+        <img src="./assets/technology/image-space-capsule-portrait.jpg" type="image/jpg" alt="space capsule">
+      </picture>
+
+
+      <!-- spaceport image -->
+      <picture id="spaceport-image" hidden data-tab-image-item="true">
+        <source media="(min-width: 45em)" srcset="./assets/technology/image-spaceport-portrait.jpg" type="image/jpg">
+        <source srcset="./assets/technology/image-spaceport-landscape.jpg" type="image/jpg">
+        <img src="./assets/technology/image-spaceport-portrait.jpg" type="image/jpg" alt="spaceport">
+      </picture>
+
+
+      <div class="number-indicators" role="tablist">
+
+        <button tabindex="0" role="tab" aria-selected="true" class="fs-500 ff-serif" aria-controls="vehicle-panel"
+          data-tab-image="vehicle-image">1</button>
+
+        <button tabindex="-1" role="tab" aria-selected="false" class="fs-500 ff-serif" aria-controls="capsule-panel"
+          data-tab-image="capsule-image">2</button>
+
+        <button tabindex="-1" role="tab" aria-selected="false" class="fs-500 ff-serif" aria-controls="spaceport-panel"
+          data-tab-image="spaceport-image">3</button>
+      </div>
+
+      <!-- vehicle panel -->
+      <article id="vehicle-panel" role="tabpanel" class="content flow">
+        <header class=" flow flow--space-sm">
+          <p class="uppercase text-accent letter-spacing-md">The terminology...</p>
+          <h2 class="text-h4">Launch vehicle</h2>
+        </header>
+
+        <p>
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+          payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+          it's quite an awe-inspiring sight on the launch pad!
+        </p>
+      </article>
+
+      <!-- capsule panel -->
+      <article hidden id="capsule-panel" role="tabpanel" class="content flow">
+        <header class=" flow flow--space-sm">
+          <p class="uppercase text-accent letter-spacing-md">The terminology...</p>
+          <h2 class="text-h4">Space capsule</h2>
+        </header>
+
+        <p>
+          A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's
+          atmosphere
+          without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema,
+          and
+          plenty of other activities to keep you entertained.
+        </p>
+      </article>
+
+      <!-- spaceport panel -->
+      <article hidden id="spaceport-panel" role="tabpanel" class="content flow">
+        <header class=" flow flow--space-sm">
+          <p class="uppercase text-accent letter-spacing-md">The terminology...</p>
+          <h2 class="text-h4">spaceport</h2>
+        </header>
+
+        <p>
+          A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for
+          ships or
+          airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage
+          of the
+          Earth’s rotation for launch.
+        </p>
+      </article>
+    </main>
+  </body>
+
+</html>
