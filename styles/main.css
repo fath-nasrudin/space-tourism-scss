@@ -1730,7 +1730,7 @@ main {
   }
 }
 .crew {
-  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-image: url("space-tourism-scss/assets/crew/background-crew-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: start;
@@ -1738,7 +1738,7 @@ main {
 
 @media (min-width: 35em) {
   .crew {
-    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    background-image: url("space-tourism-scss/assets/crew/background-crew-tablet.jpg");
   }
   .grid-12--crew > h1 {
     justify-self: start;
@@ -1746,7 +1746,7 @@ main {
 }
 @media (min-width: 45em) {
   .crew {
-    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-image: url("space-tourism-scss/assets/crew/background-crew-desktop.jpg");
   }
 }
 .grid-12--crew {
