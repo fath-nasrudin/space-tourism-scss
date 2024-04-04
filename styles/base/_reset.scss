@@ -101,6 +101,10 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+}
+
+img:not([hidden]),
+picture:not([hidden]) {
   display: block;
 }
 
