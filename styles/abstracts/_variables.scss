@@ -10,8 +10,8 @@
   // font-size
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: clamp(5rem, 7vw + 1rem, 6.25rem);
-  --fs-700: 3.5rem;
-  --fs-600: 2rem;
+  --fs-700: clamp(2.5rem, 5vw + 1rem, 3.5rem);
+  --fs-600: clamp(1.75rem, 5vw + 1rem, 2rem);
   --fs-500: 1.75rem;
   --fs-400: 1rem;
   --fs-300: 0.875rem;
